@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Магазин у aVca and хуесос хз кто</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+  body { background-color: #121212; color: #eee; line-height: 1.6; }
+
+  header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+  }
+
+  main { padding: 40px 20px; max-width: 1400px; margin: auto; }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .product {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  .product:hover {
+    transform: translateY(-5px);
+    border-color: #555;
+  }
+
+  .product h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .product p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #aaa;
+  }
+
+  .product button {
+    background-color: #333;
+    color: #eee;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .product button:hover {
+    background-color: #555;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #444;
+    color: #888;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>Магазин aVca</header>
+
+<main>
+  <div class="products">
+    <div class="product"><h2>Товар 1</h2><p>Качественный продукт номер один.</p><button onclick="addToCart('Товар 1')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 2</h2><p>Стильный и современный выбор.</p><button onclick="addToCart('Товар 2')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 3</h2><p>Высокое качество по доступной цене.</p><button onclick="addToCart('Товар 3')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 4</h2><p>Популярный среди покупателей.</p><button onclick="addToCart('Товар 4')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 5</h2><p>Надежный и долговечный товар.</p><button onclick="addToCart('Товар 5')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 6</h2><p>Идеальный выбор для дома.</p><button onclick="addToCart('Товар 6')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 7</h2><p>Современный дизайн и качество.</p><button onclick="addToCart('Товар 7')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 8</h2><p>Отличный подарок для друзей.</p><button onclick="addToCart('Товар 8')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 9</h2><p>Элегантный и практичный.</p><button onclick="addToCart('Товар 9')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 10</h2><p>Популярный выбор среди молодежи.</p><button onclick="addToCart('Товар 10')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 11</h2><p>Качественный товар для повседневного использования.</p><button onclick="addToCart('Товар 11')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 12</h2><p>Современные технологии и надежность.</p><button onclick="addToCart('Товар 12')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 13</h2><p>Высокое качество и стильный вид.</p><button onclick="addToCart('Товар 13')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 14</h2><p>Лучший выбор для дома и офиса.</p><button onclick="addToCart('Товар 14')">Добавить в корзину</button></div>
+    <div class="product"><h2>Товар 15</h2><p>Стильный и надежный продукт.</p><button onclick="addToCart('Товар 15')">Добавить в корзину</button></div>
+  </div>
+</main>
+
+<footer>© 2025 Магазин aVca. Все права защищены.</footer>
+
+<script>
+  function addToCart(productName) {
+    alert(`${productName} добавлен в корзину!`);
+  }
+</script>
+
+</body>
+</html>
